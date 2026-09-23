@@ -1,0 +1,17 @@
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/bin/Debug/net10.0/BookStore.HttpApi.Client.deps.json
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/bin/Debug/net10.0/BookStore.HttpApi.Client.dll
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/bin/Debug/net10.0/BookStore.HttpApi.Client.pdb
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/bin/Debug/net10.0/BookStore.Application.Contracts.dll
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/bin/Debug/net10.0/BookStore.Domain.Shared.dll
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/bin/Debug/net10.0/BookStore.Application.Contracts.pdb
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/bin/Debug/net10.0/BookStore.Domain.Shared.pdb
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/obj/Debug/net10.0/BookStore.HttpApi.Client.csproj.AssemblyReference.cache
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/obj/Debug/net10.0/BookStore.HttpApi.Client.GeneratedMSBuildEditorConfig.editorconfig
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/obj/Debug/net10.0/BookStore.HttpApi.Client.AssemblyInfoInputs.cache
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/obj/Debug/net10.0/BookStore.HttpApi.Client.AssemblyInfo.cs
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/obj/Debug/net10.0/BookStore.HttpApi.Client.csproj.CoreCompileInputs.cache
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/obj/Debug/net10.0/BookStor.E09ADD51.Up2Date
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/obj/Debug/net10.0/BookStore.HttpApi.Client.dll
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/obj/Debug/net10.0/refint/BookStore.HttpApi.Client.dll
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/obj/Debug/net10.0/BookStore.HttpApi.Client.pdb
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Client/obj/Debug/net10.0/ref/BookStore.HttpApi.Client.dll

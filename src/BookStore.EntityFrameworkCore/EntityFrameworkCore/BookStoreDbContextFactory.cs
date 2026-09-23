@@ -16,7 +16,8 @@ public class BookStoreDbContextFactory : IDesignTimeDbContextFactory<BookStoreDb
         
         BookStoreEfCoreEntityExtensionMappings.Configure();
 
-        var builder = new DbContextOptionsBuilder<BookStoreDbContext>()
+        // set sqlserver
+        var  builder = new DbContextOptionsBuilder<BookStoreDbContext>()
             .UseSqlServer(configuration.GetConnectionString("Default"));
         
         return new BookStoreDbContext(builder.Options);

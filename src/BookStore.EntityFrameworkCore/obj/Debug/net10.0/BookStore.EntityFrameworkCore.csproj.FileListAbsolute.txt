@@ -17,3 +17,4 @@
 /Users/axel/Dev/net/BookStore/src/BookStore.EntityFrameworkCore/obj/Debug/net10.0/BookStore.EntityFrameworkCore.pdb
 /Users/axel/Dev/net/BookStore/src/BookStore.EntityFrameworkCore/obj/Debug/net10.0/BookStore.EntityFrameworkCore.genruntimeconfig.cache
 /Users/axel/Dev/net/BookStore/src/BookStore.EntityFrameworkCore/obj/Debug/net10.0/ref/BookStore.EntityFrameworkCore.dll
+/Users/axel/Dev/net/BookStore/src/BookStore.EntityFrameworkCore/obj/Debug/net10.0/BookStore.EntityFrameworkCore.sourcelink.json

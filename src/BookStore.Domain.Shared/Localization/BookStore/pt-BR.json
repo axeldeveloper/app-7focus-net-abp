@@ -37,6 +37,8 @@
     "Unspecified": "Sistema",
     "SeeAllUsers": "Ver todos os usuários",
     "TakePhoto": "Tirar fotos",
-    "ChoosePhoto": "Escolher Foto"
+    "ChoosePhoto": "Escolher Foto",
+    "BooStore:CustomerNomeMuitoCurto": "O nome precisa ter no mínimo {MinLength} letras.",
+    "BooStore:CustomerMenorDeIdade": "O cliente precisa ter no mínimo {MinIdade} anos."
   }
 }

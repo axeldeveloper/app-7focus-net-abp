@@ -1272,3 +1272,4 @@
 /Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Host/bin/Debug/net10.0/runtimes/win-arm64/native/msalruntime_arm64.dll
 /Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Host/bin/Debug/net10.0/runtimes/win-x64/native/msalruntime.dll
 /Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Host/bin/Debug/net10.0/runtimes/win-x86/native/msalruntime_x86.dll
+/Users/axel/Dev/net/BookStore/src/BookStore.HttpApi.Host/obj/Debug/net10.0/BookStore.HttpApi.Host.sourcelink.json

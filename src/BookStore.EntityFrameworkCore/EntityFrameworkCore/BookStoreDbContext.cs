@@ -1,3 +1,4 @@
+using BookStore.Customers;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
@@ -26,7 +27,8 @@ public class BookStoreDbContext :
     IIdentityDbContext
 {
     /* Add DbSet properties for your Aggregate Roots / Entities here. */
-
+    
+    public DbSet<Customer> Customers { get; set; }
 
     #region Entities from the modules
 
@@ -61,6 +63,7 @@ public class BookStoreDbContext :
         : base(options)
     {
 
+        
     }
 
     protected override void OnModelCreating(ModelBuilder builder)
@@ -87,5 +90,15 @@ public class BookStoreDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+        
+        builder.Entity<Customer>(b =>
+        {
+            b.ToTable(BookStoreConsts.DbTablePrefix + "Customers",
+                BookStoreConsts.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props
+            b.Property(x => x.Name).IsRequired().HasMaxLength(255);
+            b.HasIndex(x => x.Code).IsUnique();
+        });
+        
     }
 }

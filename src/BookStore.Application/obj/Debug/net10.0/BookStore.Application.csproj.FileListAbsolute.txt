@@ -17,3 +17,4 @@
 /Users/axel/Dev/net/BookStore/src/BookStore.Application/obj/Debug/net10.0/refint/BookStore.Application.dll
 /Users/axel/Dev/net/BookStore/src/BookStore.Application/obj/Debug/net10.0/BookStore.Application.pdb
 /Users/axel/Dev/net/BookStore/src/BookStore.Application/obj/Debug/net10.0/ref/BookStore.Application.dll
+/Users/axel/Dev/net/BookStore/src/BookStore.Application/obj/Debug/net10.0/BookStore.Application.sourcelink.json

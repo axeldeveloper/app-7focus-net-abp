@@ -304,3 +304,4 @@
 /Users/axel/Dev/net/BookStore/src/BookStore.DbMigrator/obj/Debug/net10.0/BookStore.DbMigrator.pdb
 /Users/axel/Dev/net/BookStore/src/BookStore.DbMigrator/obj/Debug/net10.0/BookStore.DbMigrator.genruntimeconfig.cache
 /Users/axel/Dev/net/BookStore/src/BookStore.DbMigrator/obj/Debug/net10.0/ref/BookStore.DbMigrator.dll
+/Users/axel/Dev/net/BookStore/src/BookStore.DbMigrator/obj/Debug/net10.0/BookStore.DbMigrator.sourcelink.json

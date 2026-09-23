@@ -57,6 +57,7 @@ public class BookStoreEntityFrameworkCoreModule : AbpModule
             /* The main point to change your DBMS.
              * See also BookStoreDbContextFactory for EF Core tooling. */
 
+            // set sqlserver
             // options.UseSqlite();
             options.UseSqlServer();
 

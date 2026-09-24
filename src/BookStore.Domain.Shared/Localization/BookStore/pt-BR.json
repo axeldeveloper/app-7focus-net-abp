@@ -11,7 +11,6 @@
     "Welcome": "Seja bem-vindo!",
     "LongWelcomeMessage": "Bem-vindo a esta aplicação. Este é um projeto inicial baseado no ABP framework. Para mais informações, visite",
     "Date": "Data",
-    "Permission:Dashboard": "Painel",
     "Menu:Dashboard": "Painel",
     "Menu:HomePage": "Pagina inicial",
     "Dashboard": "Painel",
@@ -44,10 +43,11 @@
     "BooStore:CustomerNomeMuitoCurto": "O nome precisa ter no mínimo {MinLength} letras.",
     "BooStore:CustomerMenorDeIdade": "O cliente precisa ter no mínimo {MinIdade} anos.",
     "Action:AreYouSureToDelete": "Tem certeza de que vai excluir",
+    "Permission:Dashboard": "Painel",
     "Permission:BookStore": "Book Store",
     "Permission:Customers": "Gestão de Clientes",
-    "Permission:Customers.Create": "Criando novos livros",
-    "Permission:Customers.Edit": "Editar os livros",
+    "Permission:Customers.Create": "Criando novos clientes",
+    "Permission:Customers.Edit": "Editar os clientes",
     "Permission:Customers.Delete": "Excluindo os clientes"
   }
 }

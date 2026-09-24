@@ -1,15 +1,14 @@
-FROM node:20-alpine AS build
-
+FROM node:24-alpine AS build
 WORKDIR /app
-COPY package*.json /app/
 
-RUN yarn
-COPY . /app
+COPY package.json package-lock.json ./
+RUN npm ci --legacy-peer-deps
 
-RUN yarn build:prod
+COPY . .
+RUN npm run build:prod
 
-FROM nginx:alpine
-COPY dynamic-env.json /usr/share/nginx/html
-COPY nginx.conf  /etc/nginx/conf.d/default.conf
-
+FROM nginx:alpine AS final
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist/BookStore/browser /usr/share/nginx/html
+COPY dynamic-env.json /usr/share/nginx/html/dynamic-env.json
+EXPOSE 80

@@ -1,2 +1,16 @@
 {
+  "oAuthConfig": {
+    "issuer": "http://localhost:8080/",
+    "requireHttps": false
+  },
+  "apis": {
+    "default": {
+      "url": "http://localhost:8080",
+      "rootNamespace": "BookStore"
+    },
+    "AbpAccountPublic": {
+      "url": "http://localhost:8080",
+      "rootNamespace": "AbpAccountPublic"
+    }
+  }
 }

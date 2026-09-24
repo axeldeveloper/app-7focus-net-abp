@@ -1,10 +1,79 @@
-version: '3.8'
+name: bookstore
 
 services:
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
-      ACCEPT_EULA: Y
-      MSSQL_SA_PASSWORD: pf766312!
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "pf766312!"
+      MSSQL_PID: "Developer"
     ports:
       - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'pf766312!' -C -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    restart: unless-stopped
+
+  db-migrator:
+    build:
+      context: .
+      dockerfile: src/BookStore.DbMigrator/Dockerfile
+    environment:
+      ConnectionStrings__Default: "Server=sqlserver,1433;Database=BookStore;User Id=sa;Password=pf766312!;TrustServerCertificate=True;MultipleActiveResultSets=True"
+      OpenIddict__Applications__BookStore_App__RootUrl: "http://localhost:4200"
+      OpenIddict__Applications__BookStore_Swagger__RootUrl: "http://localhost:8080"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    restart: "no"
+
+  api:
+    build:
+      context: .
+      dockerfile: src/BookStore.HttpApi.Host/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Production"
+      ASPNETCORE_URLS: "http://+:80"
+      ConnectionStrings__Default: "Server=sqlserver,1433;Database=BookStore;User Id=sa;Password=pf766312!;TrustServerCertificate=True;MultipleActiveResultSets=True"
+      App__SelfUrl: "http://localhost:8080"
+      App__AngularUrl: "http://localhost:4200"
+      App__CorsOrigins: "http://localhost:4200"
+      App__RedirectAllowedUrls: "http://localhost:4200"
+      AuthServer__Authority: "http://localhost:8080"
+      AuthServer__RequireHttpsMetadata: "false"
+      AuthServer__CertificatePassPhrase: "1265c85b-d13d-4c84-8252-315987c2ab7b"
+    ports:
+      - "8080:80"
+    healthcheck:
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/127.0.0.1/80; printf $'GET /health-status HTTP/1.0\\r\\n\\r\\n' >&3; head -n1 <&3 | grep -qi '200'"]
+      interval: 15s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+      db-migrator:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+  web:
+    build:
+      context: angular
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    volumes:
+      - ./angular/dynamic-env.json:/usr/share/nginx/html/dynamic-env.json:ro
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  sqlserver-data:

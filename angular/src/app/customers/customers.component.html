@@ -5,7 +5,7 @@
         <h5 class="card-title">{{ '::Menu:Customers' | abpLocalization }}</h5>
       </div>
       <div class="text-end col col-md-6">
-        <button class="btn btn-primary" (click)="openCreate()" type="button">
+        <button *abpPermission="'BookStore.Customers.Create'" class="btn btn-primary" (click)="openCreate()" type="button">
           <i class="fa fa-plus me-1"></i>
           {{ '::NewCustomer' | abpLocalization }}
         </button>
@@ -43,10 +43,10 @@
                     <i class="fa fa-cog me-1"></i>{{ 'Actions' | abpLocalization }}
             </button>
             <div ngbDropdownMenu>
-              <button ngbDropdownItem (click)="openEdit(row.id)">
+              <button *abpPermission="'BookStore.Customers.Edit'" ngbDropdownItem (click)="openEdit(row.id)">
                 {{ 'Edit' | abpLocalization }}
               </button>
-              <button ngbDropdownItem (click)="delete(row.id)">
+              <button *abpPermission="'BookStore.Customers.Delete'" ngbDropdownItem (click)="delete(row.id)">
                 {{ 'Delete' | abpLocalization }}
               </button>
             </div>

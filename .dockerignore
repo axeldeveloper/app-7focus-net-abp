@@ -1,0 +1,14 @@
+.git
+.gitignore
+.idea
+.kilo
+Logs
+angular
+test
+src/**/bin
+src/**/obj
+**/node_modules
+**/dist
+**/publish
+*.user
+.DS_Store

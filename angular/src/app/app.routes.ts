@@ -27,5 +27,8 @@ export const APP_ROUTES: Routes = [
     path : 'customers', 
     loadComponent: () => import('./customers/customers.component').then(c => c.CustomersComponent) ,
     canActivate: [authGuard, permissionGuard],
+    data: { 
+      requiredPolicy: 'BookStore.Customers' 
+    },
   },
 ];

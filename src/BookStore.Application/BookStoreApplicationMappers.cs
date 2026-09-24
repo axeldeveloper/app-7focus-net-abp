@@ -1,3 +1,4 @@
+using BookStore.Customers;
 using Riok.Mapperly.Abstractions;
 using Volo.Abp.Mapperly;
 
@@ -13,3 +14,13 @@ namespace BookStore;
  *    public override partial void Map(BookDto source, CreateUpdateBookDto destination);
  * }
  */
+
+[Mapper(RequiredMappingStrategy = RequiredMappingStrategy.Target)]
+public partial class BookStoreApplicationMappers : MapperBase<Customer, CustomerDto>
+{
+    public override partial CustomerDto Map(Customer source);
+        
+    public override partial void Map(Customer source, CustomerDto destination);
+        
+}
+

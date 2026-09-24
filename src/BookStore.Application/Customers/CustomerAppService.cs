@@ -1,4 +1,5 @@
 using System;
+using BookStore.Permissions;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Repositories;
@@ -17,7 +18,13 @@ public class CustomerAppService : CrudAppService<
     public CustomerAppService(IRepository<Customer, Guid> repository)
         : base(repository)
     {
+        GetPolicyName = BookStorePermissions.Customers.Default;
+        GetListPolicyName = BookStorePermissions.Customers.Default;
+        CreatePolicyName = BookStorePermissions.Customers.Create;
+        UpdatePolicyName = BookStorePermissions.Customers.Edit;
+        DeletePolicyName = BookStorePermissions.Customers.Delete;
     }
+    
     // Sobrescreve para usar o construtor com validação (SetNome/SetDataNascimento)
     // ao invés do mapeamento automático do AutoMapper, que só faria set direto.
     protected override Customer MapToEntity(CreateUpdateCustomerDto createInput)

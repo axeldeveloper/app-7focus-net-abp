@@ -86,8 +86,9 @@ $ cd src/BooStore.HttpApi.Host
 $ dotnet run
 ```
 
-cria o dto service e depois  application
+cria o dto service e depois  application 
 
+depois abp generate-proxy -t ng -url https://localhost:44388/
 
 DESAFIO:  Aqui, gostamos de dar a oportunidade para que todos mostrem o seu trabalho na prática, afinal acreditamos em mais mão na massa e menos blábláblá. Então vamos juntar o útil ao agradável.. 
 

@@ -480,3 +480,4 @@
 /Users/axel/Dev/net/BookStore/test/BookStore.EntityFrameworkCore.Tests/obj/Debug/net10.0/BookStore.EntityFrameworkCore.Tests.pdb
 /Users/axel/Dev/net/BookStore/test/BookStore.EntityFrameworkCore.Tests/obj/Debug/net10.0/BookStore.EntityFrameworkCore.Tests.genruntimeconfig.cache
 /Users/axel/Dev/net/BookStore/test/BookStore.EntityFrameworkCore.Tests/obj/Debug/net10.0/ref/BookStore.EntityFrameworkCore.Tests.dll
+/Users/axel/Dev/net/BookStore/test/BookStore.EntityFrameworkCore.Tests/obj/Debug/net10.0/BookStore.EntityFrameworkCore.Tests.sourcelink.json

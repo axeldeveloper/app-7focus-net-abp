@@ -280,3 +280,4 @@
 /Users/axel/Dev/net/BookStore/test/BookStore.Domain.Tests/obj/Debug/net10.0/BookStore.Domain.Tests.pdb
 /Users/axel/Dev/net/BookStore/test/BookStore.Domain.Tests/obj/Debug/net10.0/BookStore.Domain.Tests.genruntimeconfig.cache
 /Users/axel/Dev/net/BookStore/test/BookStore.Domain.Tests/obj/Debug/net10.0/ref/BookStore.Domain.Tests.dll
+/Users/axel/Dev/net/BookStore/test/BookStore.Domain.Tests/obj/Debug/net10.0/BookStore.Domain.Tests.sourcelink.json

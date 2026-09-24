@@ -210,3 +210,4 @@
 /Users/axel/Dev/net/BookStore/test/BookStore.TestBase/obj/Debug/net10.0/BookStore.TestBase.pdb
 /Users/axel/Dev/net/BookStore/test/BookStore.TestBase/obj/Debug/net10.0/BookStore.TestBase.genruntimeconfig.cache
 /Users/axel/Dev/net/BookStore/test/BookStore.TestBase/obj/Debug/net10.0/ref/BookStore.TestBase.dll
+/Users/axel/Dev/net/BookStore/test/BookStore.TestBase/obj/Debug/net10.0/BookStore.TestBase.sourcelink.json

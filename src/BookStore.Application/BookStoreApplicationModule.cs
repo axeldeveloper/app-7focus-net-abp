@@ -18,9 +18,13 @@ namespace BookStore;
     typeof(AbpIdentityApplicationModule),
     typeof(AbpAccountApplicationModule),
     typeof(AbpTenantManagementApplicationModule),
-    typeof(AbpSettingManagementApplicationModule)
+    typeof(AbpSettingManagementApplicationModule),
+    typeof(AbpMapperlyModule)
     )]
 public class BookStoreApplicationModule : AbpModule
 {
-
+    public override void ConfigureServices(ServiceConfigurationContext context)
+    {
+        context.Services.AddMapperlyObjectMapper<BookStoreApplicationModule>();
+    }
 }

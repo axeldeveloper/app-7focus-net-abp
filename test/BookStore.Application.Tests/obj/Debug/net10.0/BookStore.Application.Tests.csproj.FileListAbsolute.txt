@@ -305,3 +305,4 @@
 /Users/axel/Dev/net/BookStore/test/BookStore.Application.Tests/obj/Debug/net10.0/BookStore.Application.Tests.pdb
 /Users/axel/Dev/net/BookStore/test/BookStore.Application.Tests/obj/Debug/net10.0/BookStore.Application.Tests.genruntimeconfig.cache
 /Users/axel/Dev/net/BookStore/test/BookStore.Application.Tests/obj/Debug/net10.0/ref/BookStore.Application.Tests.dll
+/Users/axel/Dev/net/BookStore/test/BookStore.Application.Tests/obj/Debug/net10.0/BookStore.Application.Tests.sourcelink.json
